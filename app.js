@@ -9,7 +9,8 @@ const hbs = require('hbs');
 const sassMiddleware = require('node-sass-middleware');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const aboutRouter = require('./routes/about');
+const projectsRouter = require('./routes/projects');
 
 const app = express();
 
@@ -17,6 +18,8 @@ const app = express();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs');
 
+
+// Midlewares
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -31,8 +34,10 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Routes
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/about', aboutRouter);
+app.use('/projects', projectsRouter);
 
 // Use partials
 hbs.registerPartials(path.join(__dirname, '/views/partials'));
