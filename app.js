@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const hbs = require('hbs');
 const sassMiddleware = require('node-sass-middleware');
+const dotenv = require('dotenv').config();
 
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
