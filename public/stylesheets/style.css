@@ -124,6 +124,14 @@ z-index: 10;
   opacity: 0.5;
 }
 
+#about {
+  font-size: 0;
+}
+
+#projects {
+  font-size: 0em;
+}
+
 
 
 /* --- ABOUT --- */
@@ -237,6 +245,14 @@ z-index: 10;
 .quote {
   font-size: 2em;
   height: 100%;
+}
+
+#about {
+  font-size: 0;
+}
+
+#projects {
+  font-size: 0em;
 }
 
 /* ABOUT */
