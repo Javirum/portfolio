@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET about page */
+/* GET project page */
 router.get('/', function (req, res, next) {
   res.render('projects', { title: 'Javis portfolio' });
 });

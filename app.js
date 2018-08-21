@@ -12,6 +12,7 @@ const dotenv = require('dotenv').config();
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
 const projectsRouter = require('./routes/projects');
+const contactRouter = require('./routes/contact');
 
 const app = express();
 
@@ -39,6 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/projects', projectsRouter);
+app.use('/contact', contactRouter);
 
 // Use partials
 hbs.registerPartials(path.join(__dirname, '/views/partials'));
