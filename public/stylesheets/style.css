@@ -194,6 +194,18 @@ z-index: 10;
   background-color: white;
 }
 
+.brocolies {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.bro-img {
+  max-width: 50%;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
 
 /* Tablet responsive */
 
