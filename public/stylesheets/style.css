@@ -188,6 +188,7 @@ z-index: 10;
 
 .projectsImg {
   margin-bottom: 5%;
+  max-width: 70%;
 }
 
 .projectsLinks {
