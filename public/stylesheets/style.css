@@ -73,7 +73,6 @@ z-index: 10;
   grid-row: 3 / 8;
   }
 
-
 .box2 {
   background-color:#D2D0CF;
   grid-column: 7;
@@ -136,8 +135,6 @@ z-index: 10;
 #contact {
   font-size: 0em;
 }
-
-
 
 /* --- ABOUT --- */
 
@@ -207,6 +204,9 @@ z-index: 10;
   margin-bottom: 5%;
 }
 
+#video {
+min-width: 50%;
+}
 
 /* Tablet responsive */
 
